@@ -6,7 +6,7 @@ Images must be monochrome gray-scale for halftoning. Use images with even number
 The DFT is computed, independent quantization with error-diffuced halftoning with the diffusion 
 weights specified by Floyd and Steinberg.
 
-The Images folder contains images. Image 1, Image 2 and Image 3 were used for the DigitalHalftoning and the other image used for Halftone removal.
+The Images folder contains images: Image 1, Image 2 and Image 3 were used for the DigitalHalftoning and the other image used for Halftone removal.
 
 
 
