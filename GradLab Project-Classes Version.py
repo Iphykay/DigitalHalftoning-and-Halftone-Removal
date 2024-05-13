@@ -1,4 +1,5 @@
-import numpy as np
+# IMPORTS
+import numpy             as np
 import matplotlib.pyplot as plt
 import cv2
 import sys
@@ -13,6 +14,7 @@ image_DHT = "C:/Users/Starboy/OneDrive - rit.edu/Courses/Grad Lab/Fourier Projec
 image_HT = "C:/Users/Starboy/OneDrive - rit.edu/Grad Lab/Images/Kahanamoku_Jan-37_cropped_bitmap.tif"
 
 
+### MAIN CODE
 class DigitalHalftoning:
     """
     This class is used to convert photographs to bitonal images ie dots of black ink of white
@@ -27,6 +29,14 @@ class DigitalHalftoning:
     def readimage(self, image):
         """
         This method read the file and converts it to gray-scale.
+
+        Input:
+        ------
+        image: n by n image
+
+        Output:
+        -------
+        : Returns converts an image into gray-scale image
         """
 
         image = self.image
@@ -38,14 +48,32 @@ class DigitalHalftoning:
     def displayimage(self, image):
         """
         This method helps in diplaying the image.
+
+        Input:
+        ------
+        image: n by n image
+
+        Output:
+        -------
+        : Returns displays the gray-scale image
         """
         if isinstance(image, (float, int)):
             self.image = image
         output = plt.imshow(image, cmap='gray')
-        output = plt.show()
-        return output
+        return plt.show()
 
     def normalizeimages(self, image):
+        """
+        Normalizes an image
+
+        Input:
+        ------
+        image: n by n image
+
+        Output:
+        -------
+        : Returns normalizes the gray-scale image
+        """
         self.image = image
         return self.image/255.0
 
