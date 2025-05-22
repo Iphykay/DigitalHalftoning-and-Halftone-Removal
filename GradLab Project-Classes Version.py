@@ -11,7 +11,7 @@ random.seed(10)
 
 #Loading one of the image
 image_DHT = "C:/Users/Starboy/OneDrive - rit.edu/Courses/Grad Lab/Fourier Project/Images/Image1.jpg"
-image_HT = "C:/Users/Starboy/OneDrive - rit.edu/Grad Lab/Images/Kahanamoku_Jan-37_cropped_bitmap.tif"
+image_HT  = "C:/Users/Starboy/OneDrive - rit.edu/Grad Lab/Images/Kahanamoku_Jan-37_cropped_bitmap.tif"
 
 
 ### MAIN CODE
